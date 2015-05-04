@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amapolazul.www.traductorandriod" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".welcome"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".upper_six.UpperSixActivity"
+            android:label="@string/title_activity_upper_six"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".under_six.UnderSixActivity"
+            android:label="@string/title_activity_under_six_activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".upper_six.word_result"
+            android:label="@string/title_activity_word_result"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.LetterHActivity"
+            android:label="@string/title_activity_letter_h"
+            android:parentActivityName=".under_six.UnderSixActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity" />
+        </activity>
+        <activity
+            android:name=".under_six.letters.LetterAActivity"
+            android:label="@string/title_activity_letter_a"
+            android:parentActivityName=".under_six.UnderSixActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity" />
+        </activity>
+        <activity
+            android:name=".under_six.letters.popup.GrandMotherPopUp"
+            android:label="@string/title_activity_grand_mother_pop_up"
+            android:parentActivityName=".under_six.letters.LetterAActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amapolazul.www.traductorandriod.under_six.letters.LetterAActivity" />
+        </activity>
+        <activity
+            android:name=".under_six.letters.LetterAActivityTwo"
+            android:label="@string/title_activity_letter_aactivity_two"
+            android:parentActivityName=".under_six.letters.LetterAActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amapolazul.www.traductorandriod.under_six.letters.LetterAActivity" />
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_b.LetterBActivity"
+            android:label="@string/title_activity_letter_b"
+            android:parentActivityName=".under_six.UnderSixActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity" />
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_b.LetterBActivityTwo"
+            android:label="@string/title_activity_letter_bactivity_two"
+            android:parentActivityName=".under_six.letters.letter_b.LetterBActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amapolazul.www.traductorandriod.under_six.letters.letter_b.LetterBActivity" />
+        </activity>
+    </application>
+
+</manifest>

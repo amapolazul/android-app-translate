@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.amapolazul.www.traductorandriod.under_six.letters.letter_b.LetterBActivity"
+    android:background="@drawable/fondo202"
+    android:id="@+id/letterBActivityLayout">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bien"
+        android:src="@drawable/ballena"
+        android:layout_below="@+id/imageView35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:onClick="playWhaleSound" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blanco"
+        android:src="@drawable/balon"
+        android:onClick="playBallFaSound"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_alignTop="@+id/bien"
+        android:layout_toRightOf="@+id/bien"
+        android:layout_toEndOf="@+id/bien"
+        android:layout_marginRight="34dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boca"
+        android:src="@drawable/baloncesto"
+        android:onClick="playBasketBallSound"
+        android:layout_alignTop="@+id/blanco"
+        android:layout_alignLeft="@+id/brazo"
+        android:layout_alignStart="@+id/brazo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bombero"
+        android:src="@drawable/banco"
+        android:onClick="playBankSound"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_alignTop="@+id/boca"
+        android:layout_toRightOf="@+id/boca"
+        android:layout_toEndOf="@+id/boca" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrador"
+        android:src="@drawable/barco"
+        android:onClick="playBarcoSound"
+        android:layout_alignTop="@+id/bombero"
+        android:layout_toRightOf="@+id/bombero"
+        android:layout_toEndOf="@+id/bombero"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botas"
+        android:src="@drawable/bano"
+        android:onClick="playBathRoomSound"
+        android:layout_alignTop="@+id/botellas"
+        android:layout_toLeftOf="@+id/blanco"
+        android:layout_toStartOf="@+id/blanco" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botellas"
+        android:src="@drawable/bebe"
+        android:onClick="playBabySound"
+        android:layout_alignTop="@+id/bufanda"
+        android:layout_alignLeft="@+id/blanco"
+        android:layout_alignStart="@+id/blanco" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bufanda"
+        android:src="@drawable/bebida"
+        android:onClick="playDrinkPortSound"
+        android:layout_alignTop="@+id/burro"
+        android:layout_toLeftOf="@+id/borrador"
+        android:layout_toStartOf="@+id/borrador" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volverPrincipalB"
+        android:src="@drawable/fichas3"
+        android:onClick="returnToUnderSixBLetter"
+        android:layout_alignTop="@+id/masFichasB"
+        android:layout_alignRight="@+id/bien"
+        android:layout_alignEnd="@+id/bien" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brazo"
+        android:src="@drawable/biblioteca"
+        android:onClick="playLibrarySound"
+        android:layout_alignTop="@+id/bufanda"
+        android:layout_alignLeft="@+id/imageView35"
+        android:layout_alignStart="@+id/imageView35" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/burro"
+        android:src="@drawable/bicicleta"
+        android:onClick="playBikeSound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/borrador"
+        android:layout_alignStart="@+id/borrador" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/masFichasB"
+        android:src="@drawable/fichas4"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/borrador"
+        android:layout_alignEnd="@+id/borrador"
+        android:onClick="goToOtherWordsBLetter" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView35"
+        android:src="@drawable/fichas2"
+        android:layout_alignTop="@+id/volverPrincipalB"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
