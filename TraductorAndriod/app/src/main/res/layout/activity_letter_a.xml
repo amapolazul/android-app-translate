@@ -45,7 +45,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bombero"
+        android:id="@+id/dentista"
         android:src="@drawable/adios"
         android:onClick="playGoodByeSound"
         android:layout_alignTop="@+id/animalB"
@@ -58,17 +58,16 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/borrador"
+        android:id="@+id/deporte"
         android:src="@drawable/aire"
         android:onClick="playAirSound"
-        android:layout_alignTop="@+id/botas"
+        android:layout_alignTop="@+id/dia"
         android:layout_alignLeft="@+id/anilloB"
         android:layout_alignStart="@+id/anilloB" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/botas"
         android:src="@drawable/agua"
         android:onClick="playWaterSound"
         android:layout_alignParentBottom="true"
@@ -78,27 +77,26 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bufanda"
         android:src="@drawable/almuerzo"
         android:onClick="playLunchSound"
-        android:layout_alignTop="@+id/borrador"
+        android:layout_alignTop="@+id/deporte"
         android:layout_alignLeft="@+id/animalB"
         android:layout_alignStart="@+id/animalB" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bufanda"
+        android:id="@+id/dia"
         android:src="@drawable/amarillo"
         android:onClick="playYellowSound"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/bombero"
-        android:layout_alignStart="@+id/bombero" />
+        android:layout_alignLeft="@+id/dentista"
+        android:layout_alignStart="@+id/dentista" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/volverPrincipalB"
+        android:id="@+id/volverPrincipalD"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -111,19 +109,19 @@
         android:id="@+id/imageButton9"
         android:src="@drawable/amor"
         android:onClick="playLoveSound"
-        android:layout_alignTop="@+id/bufanda"
-        android:layout_toRightOf="@+id/bombero"
-        android:layout_toEndOf="@+id/bombero" />
+        android:layout_alignTop="@+id/dia"
+        android:layout_toRightOf="@+id/dentista"
+        android:layout_toEndOf="@+id/dentista" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/burro"
+        android:id="@+id/diente"
         android:src="@drawable/aeropuerto"
         android:onClick="playAirPortSound"
-        android:layout_alignTop="@+id/bombero"
-        android:layout_toRightOf="@+id/bombero"
-        android:layout_toEndOf="@+id/bombero" />
+        android:layout_alignTop="@+id/dentista"
+        android:layout_toRightOf="@+id/dentista"
+        android:layout_toEndOf="@+id/dentista" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -133,8 +131,8 @@
         android:onClick="goToOtherWords"
         android:clickable="true"
         android:layout_alignTop="@+id/imageView35"
-        android:layout_alignRight="@+id/burro"
-        android:layout_alignEnd="@+id/burro" />
+        android:layout_alignRight="@+id/diente"
+        android:layout_alignEnd="@+id/diente" />
 
     <ImageView
         android:layout_width="wrap_content"

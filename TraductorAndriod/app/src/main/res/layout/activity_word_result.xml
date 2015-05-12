@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/wordResult"
-        android:textSize="60dp"
+        android:textSize="45dp"
+        android:textColor="#ffd4145a"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffd4145a" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -27,5 +27,16 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/phonetic"
+        android:textSize="30dp"
+        android:textColor="#ffd4145a"
+        android:layout_marginTop="62dp"
+        android:layout_alignTop="@+id/wordResult"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -10,6 +10,8 @@ import android.view.View;
 
 import com.amapolazul.www.traductorandriod.R;
 import com.amapolazul.www.traductorandriod.under_six.letters.letter_b.LetterBActivity;
+import com.amapolazul.www.traductorandriod.under_six.letters.letter_c.LetterCActivity;
+import com.amapolazul.www.traductorandriod.under_six.letters.letter_d.LetterDActivity;
 import com.amapolazul.www.traductorandriod.welcome;
 import com.amapolazul.www.traductorandriod.under_six.letters.LetterAActivity;
 
@@ -62,7 +64,7 @@ public class UnderSixActivity extends Activity {
     }
 
     public void goToLetterCActivity(View view)throws InterruptedException{
-        Intent intent  = new Intent(this, LetterAActivity.class);
+        Intent intent  = new Intent(this, LetterCActivity.class);
         MediaPlayer mPlayer = MediaPlayer.create(UnderSixActivity.this, R.raw.c);
         mPlayer.start();
         Thread.sleep(timeSleep);
@@ -70,7 +72,7 @@ public class UnderSixActivity extends Activity {
     }
 
     public void goToLetterDActivity(View view)throws InterruptedException{
-        Intent intent  = new Intent(this, LetterAActivity.class);
+        Intent intent  = new Intent(this, LetterDActivity.class);
         MediaPlayer mPlayer = MediaPlayer.create(UnderSixActivity.this, R.raw.d);
         mPlayer.start();
         Thread.sleep(timeSleep);
@@ -253,8 +255,13 @@ public class UnderSixActivity extends Activity {
         startActivity(intent);
     }
 
-    public void goInitPage(View view) {
+    @Override
+    public void onBackPressed() {
         Intent intent  = new Intent(this, welcome.class);
         startActivity(intent);
+    }
+
+    public void goInitPage(View view) {
+        onBackPressed();
     }
 }

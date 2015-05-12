@@ -12,10 +12,12 @@ import android.widget.TextView;
 
 import com.amapolazul.www.traductorandriod.R;
 import com.amapolazul.www.traductorandriod.utils.Constants;
+import com.amapolazul.www.traductorandriod.welcome;
 
 public class word_result extends Activity {
 
     private String wordToShow;
+    private String phonetic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +26,16 @@ public class word_result extends Activity {
 
         Intent intent = getIntent();
         wordToShow = intent.getStringExtra(Constants.WORD_FOUND_URI);
+        phonetic = intent.getStringExtra(Constants.AUDIO_FOUND_URI);
         Typeface face = Typeface.createFromAsset(getAssets(),
                 "pooh.ttf");
 
         TextView textView = (TextView) findViewById(R.id.wordResult);
         textView.setTypeface(face);
-        textView.setText(wordToShow);
+        TextView textViewPhonetic = (TextView) findViewById(R.id.phonetic);
+        textViewPhonetic.setTypeface(face);
+        textView.setText(wordToShow.replace(",", "\n"));
+        textViewPhonetic.setText(phonetic);
     }
 
 
@@ -55,8 +61,13 @@ public class word_result extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void back(View view){
+    @Override
+    public void onBackPressed() {
         Intent intent = new Intent(this, UpperSixActivity.class);
         startActivity(intent);
+    }
+
+    public void back(View view){
+        onBackPressed();
     }
 }

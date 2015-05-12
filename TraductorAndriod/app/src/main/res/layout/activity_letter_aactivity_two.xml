@@ -45,7 +45,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bombero"
+        android:id="@+id/dentista"
         android:src="@drawable/arbol"
         android:onClick="playTreeSound"
         android:layout_alignTop="@+id/animalB"
@@ -58,7 +58,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/borrador"
+        android:id="@+id/deporte"
         android:src="@drawable/autobus"
         android:onClick="playBusSound"
         android:layout_alignParentBottom="true"
@@ -68,7 +68,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/botas"
+        android:id="@+id/dia"
         android:src="@drawable/arte"
         android:onClick="playArtSound"
         android:layout_alignParentBottom="true"
@@ -88,17 +88,17 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bufanda"
+        android:id="@+id/dia"
         android:src="@drawable/azucar"
         android:onClick="playSugarSound"
         android:layout_alignTop="@+id/avionB"
-        android:layout_alignLeft="@+id/bombero"
-        android:layout_alignStart="@+id/bombero" />
+        android:layout_alignLeft="@+id/dentista"
+        android:layout_alignStart="@+id/dentista" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/volverPrincipalB"
+        android:id="@+id/volverPrincipalD"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -122,9 +122,9 @@
         android:id="@+id/arrozB"
         android:src="@drawable/arroz"
         android:onClick="playRiceSound"
-        android:layout_alignTop="@+id/bombero"
-        android:layout_toRightOf="@+id/bombero"
-        android:layout_toEndOf="@+id/bombero" />
+        android:layout_alignTop="@+id/dentista"
+        android:layout_toRightOf="@+id/dentista"
+        android:layout_toEndOf="@+id/dentista" />
 
     <ImageView
         android:layout_width="wrap_content"

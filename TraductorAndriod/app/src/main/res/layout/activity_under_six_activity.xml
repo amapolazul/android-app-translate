@@ -35,7 +35,8 @@
         android:src="@drawable/c"
         android:layout_alignTop="@+id/imageView5"
         android:layout_toLeftOf="@+id/imageView7"
-        android:layout_toStartOf="@+id/imageView7" />
+        android:layout_toStartOf="@+id/imageView7"
+        android:onClick="goToLetterCActivity"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -43,7 +44,8 @@
         android:id="@+id/imageView7"
         android:src="@drawable/d"
         android:layout_alignTop="@+id/imageView6"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="goToLetterDActivity"/>
 
     <ImageView
         android:layout_width="wrap_content"

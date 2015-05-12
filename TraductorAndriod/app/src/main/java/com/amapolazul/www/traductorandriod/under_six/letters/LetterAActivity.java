@@ -237,6 +237,11 @@ public class LetterAActivity extends Activity {
     }
 
     public void returnToUnderSix(View view) {
+        onBackPressed();
+    }
+
+    @Override
+    public void onBackPressed() {
         Intent intent  = new Intent(this, UnderSixActivity.class);
         startActivity(intent);
     }

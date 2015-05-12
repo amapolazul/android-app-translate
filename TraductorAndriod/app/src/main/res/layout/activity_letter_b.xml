@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bien"
+        android:id="@+id/cereza"
         android:src="@drawable/ballena"
         android:layout_below="@+id/imageView35"
         android:layout_alignParentLeft="true"
@@ -22,119 +22,116 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/blanco"
+        android:id="@+id/cabeza"
         android:src="@drawable/balon"
         android:onClick="playBallFaSound"
         android:layout_marginLeft="37dp"
         android:layout_marginStart="37dp"
-        android:layout_alignTop="@+id/bien"
-        android:layout_toRightOf="@+id/bien"
-        android:layout_toEndOf="@+id/bien"
+        android:layout_alignTop="@+id/cereza"
+        android:layout_toRightOf="@+id/cereza"
+        android:layout_toEndOf="@+id/cereza"
         android:layout_marginRight="34dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/boca"
+        android:id="@+id/delfin"
         android:src="@drawable/baloncesto"
         android:onClick="playBasketBallSound"
-        android:layout_alignTop="@+id/blanco"
-        android:layout_alignLeft="@+id/brazo"
-        android:layout_alignStart="@+id/brazo" />
+        android:layout_alignTop="@+id/cabeza"
+        android:layout_alignLeft="@+id/dia"
+        android:layout_alignStart="@+id/dia" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bombero"
+        android:id="@+id/dentista"
         android:src="@drawable/banco"
         android:onClick="playBankSound"
         android:layout_marginLeft="42dp"
         android:layout_marginStart="42dp"
-        android:layout_alignTop="@+id/boca"
-        android:layout_toRightOf="@+id/boca"
-        android:layout_toEndOf="@+id/boca" />
+        android:layout_alignTop="@+id/delfin"
+        android:layout_toRightOf="@+id/delfin"
+        android:layout_toEndOf="@+id/delfin" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/borrador"
+        android:id="@+id/deporte"
         android:src="@drawable/barco"
         android:onClick="playBarcoSound"
-        android:layout_alignTop="@+id/bombero"
-        android:layout_toRightOf="@+id/bombero"
-        android:layout_toEndOf="@+id/bombero"
+        android:layout_alignTop="@+id/dentista"
+        android:layout_toRightOf="@+id/dentista"
+        android:layout_toEndOf="@+id/dentista"
         android:layout_marginLeft="40dp"
         android:layout_marginStart="40dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/botas"
         android:src="@drawable/bano"
         android:onClick="playBathRoomSound"
-        android:layout_alignTop="@+id/botellas"
-        android:layout_toLeftOf="@+id/blanco"
-        android:layout_toStartOf="@+id/blanco" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/botellas"
         android:src="@drawable/bebe"
         android:onClick="playBabySound"
-        android:layout_alignTop="@+id/bufanda"
-        android:layout_alignLeft="@+id/blanco"
-        android:layout_alignStart="@+id/blanco" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/cabeza"
+        android:layout_alignStart="@+id/cabeza" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bufanda"
         android:src="@drawable/bebida"
         android:onClick="playDrinkPortSound"
-        android:layout_alignTop="@+id/burro"
-        android:layout_toLeftOf="@+id/borrador"
-        android:layout_toStartOf="@+id/borrador" />
+        android:layout_alignTop="@+id/diente"
+        android:layout_toLeftOf="@+id/deporte"
+        android:layout_toStartOf="@+id/deporte" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/volverPrincipalB"
+        android:id="@+id/volverPrincipalD"
         android:src="@drawable/fichas3"
         android:onClick="returnToUnderSixBLetter"
-        android:layout_alignTop="@+id/masFichasB"
-        android:layout_alignRight="@+id/bien"
-        android:layout_alignEnd="@+id/bien" />
+        android:layout_alignTop="@+id/masFichasD"
+        android:layout_alignRight="@+id/cereza"
+        android:layout_alignEnd="@+id/cereza" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/brazo"
+        android:id="@+id/dia"
         android:src="@drawable/biblioteca"
         android:onClick="playLibrarySound"
-        android:layout_alignTop="@+id/bufanda"
+        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/imageView35"
         android:layout_alignStart="@+id/imageView35" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/burro"
+        android:id="@+id/diente"
         android:src="@drawable/bicicleta"
         android:onClick="playBikeSound"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/borrador"
-        android:layout_alignStart="@+id/borrador" />
+        android:layout_alignLeft="@+id/deporte"
+        android:layout_alignStart="@+id/deporte" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/masFichasB"
+        android:id="@+id/masFichasD"
         android:src="@drawable/fichas4"
         android:clickable="true"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/borrador"
-        android:layout_alignEnd="@+id/borrador"
+        android:layout_alignRight="@+id/deporte"
+        android:layout_alignEnd="@+id/deporte"
         android:onClick="goToOtherWordsBLetter" />
 
     <ImageView
@@ -142,6 +139,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView35"
         android:src="@drawable/fichas2"
-        android:layout_alignTop="@+id/volverPrincipalB"
+        android:layout_alignTop="@+id/volverPrincipalD"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

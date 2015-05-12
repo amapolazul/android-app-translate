@@ -235,8 +235,13 @@ public class LetterBActivityTwo extends Activity {
         mPlayer.start();
     }
 
-    public void returnToBLetter(View view) {
+    @Override
+    public void onBackPressed() {
         Intent intent  = new Intent(this, LetterBActivity.class);
         startActivity(intent);
+    }
+
+    public void returnToBLetter(View view) {
+        onBackPressed();
     }
 }

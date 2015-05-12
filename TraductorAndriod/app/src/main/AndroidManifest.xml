@@ -82,6 +82,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.amapolazul.www.traductorandriod.under_six.letters.letter_b.LetterBActivity" />
         </activity>
+        <activity
+            android:name=".under_six.letters.letter_c.LetterCActivity"
+            android:label="@string/title_activity_letter_c" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_c.LetterCActivityTwo"
+            android:label="@string/title_activity_letter_cactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_d.LetterDActivity"
+            android:label="@string/title_activity_letter_d" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_d.LetterDActivityTwo"
+            android:label="@string/title_activity_letter_dactivity_two" >
+        </activity>
     </application>
 
 </manifest>

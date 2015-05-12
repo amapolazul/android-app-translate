@@ -221,7 +221,7 @@ public class LetterAActivityTwo extends Activity {
         MediaPlayer mPlayer = MediaPlayer.create(LetterAActivityTwo.this, R.raw.blue);
         busyDialog = new Dialog(this, R.style.lightbox_dialog);
         busyDialog.setContentView(R.layout.lightbox_dialog);
-        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.azucarlarge);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.azullarge);
 
         ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
         dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
@@ -236,8 +236,13 @@ public class LetterAActivityTwo extends Activity {
         mPlayer.start();
     }
 
-    public void returnToUnderSix(View view) {
+    @Override
+    public void onBackPressed() {
         Intent intent  = new Intent(this, LetterAActivity.class);
         startActivity(intent);
+    }
+
+    public void returnToUnderSix(View view) {
+        onBackPressed();
     }
 }

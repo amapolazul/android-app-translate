@@ -1,7 +1,9 @@
+
 package com.amapolazul.www.traductorandriod.upper_six;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,9 +17,14 @@ import android.widget.TextView;
 import com.amapolazul.www.traductorandriod.R;
 import com.amapolazul.www.traductorandriod.persistence.TranslatorWordsDAO;
 import com.amapolazul.www.traductorandriod.persistence.TranslatorWordsInfo;
+import com.amapolazul.www.traductorandriod.under_six.UnderSixActivity;
 import com.amapolazul.www.traductorandriod.utils.Constants;
 import com.amapolazul.www.traductorandriod.welcome;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.sql.SQLException;
 
 public class UpperSixActivity extends Activity {
@@ -42,17 +49,30 @@ public class UpperSixActivity extends Activity {
         translateType = Constants.ESP_TRANS_TYPE;
 
         translatorWordsDAO = new TranslatorWordsDAO(this);
-        try{
+
+        AssetManager assetManager = this.getAssets();
+        try {
+            InputStream csvStream = assetManager.open("a.csv");
+            InputStreamReader csvStreamReader = new InputStreamReader(csvStream);
+            BufferedReader reader = new BufferedReader(csvStreamReader);
             translatorWordsDAO.open();
-            if(translatorWordsDAO.getAllWords().isEmpty()){
-                TranslatorWordsInfo translatorWordsInfo = new TranslatorWordsInfo();
-                translatorWordsInfo.setEnglish_audio_path("pathenglis");
-                translatorWordsInfo.setEspanol_audio_path("pathSpa");
-                translatorWordsInfo.setEnglish_def("HOUSE");
-                translatorWordsInfo.setEspanol_def("CASA");
-                translatorWordsDAO.createWordDefinition(translatorWordsInfo);
+            //translatorWordsDAO.removeAll();
+            String line;
+            if(translatorWordsDAO.getWordEnglishSpanishInfo("a") == null) {
+                while ((line = reader.readLine()) != null) {
+                    String[] array = line.split(";");
+                    System.out.println("agregando linea " + line);
+                    TranslatorWordsInfo translatorWordsInfo = new TranslatorWordsInfo();
+                    translatorWordsInfo.setEnglish_audio_path(array[2]);
+                    translatorWordsInfo.setEspanol_audio_path("pathSpa");
+                    translatorWordsInfo.setEnglish_def(array[0]);
+                    translatorWordsInfo.setEspanol_def(array[1]);
+                    translatorWordsDAO.createWordDefinition(translatorWordsInfo);
+                }
             }
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -84,13 +104,14 @@ public class UpperSixActivity extends Activity {
     /**
      * Verifica el tipo de traduccion a hacer. Si es español a ingles o ingles a español
      * modificando un string en la actividad dependiendo del checkbox seleccionado
+     *
      * @param view
      */
     public void onRadioButtonClicked(View view) {
         System.out.println("Cambiando");
         ImageView englishRadio = (ImageView) findViewById(R.id.engSpaRadio);
         ImageView spanishRadio = (ImageView) findViewById(R.id.spaIngRadio);
-        if(changeRadioStatusEnglish){
+        if (changeRadioStatusEnglish) {
             englishRadio.setImageResource(R.drawable.radio_active);
             spanishRadio.setImageResource(R.drawable.radio_normal);
             translateType = Constants.ENG_TRANS_TYPE;
@@ -107,26 +128,40 @@ public class UpperSixActivity extends Activity {
         System.out.print("Entrando al metodo");
         EditText textEdit = (EditText) findViewById(R.id.inputPalabra);
         String wordToFind = textEdit.getText().toString();
-        TranslatorWordsInfo info = translatorWordsDAO.getWordInfo(wordToFind);
         String wordToShow = "";
-        if(info != null) {
-            if (translateType.equals(Constants.ESP_TRANS_TYPE)) {
-                wordToShow = info.getEnglish_def();
+        String phonetic = "";
 
+        if (translateType.equals(Constants.ESP_TRANS_TYPE)) {
+            TranslatorWordsInfo info = translatorWordsDAO.getWordSpanishEnglishInfo(wordToFind);
+            if(info != null) {
+                wordToShow = info.getEnglish_def();
+                phonetic = info.getEnglish_audio_path();
             } else {
-                wordToShow = info.getEspanol_def();
+                wordToShow = Constants.WORD_NOT_FOUND;
             }
+
         } else {
-            wordToShow = Constants.WORD_NOT_FOUND;
+            TranslatorWordsInfo info = translatorWordsDAO.getWordEnglishSpanishInfo(wordToFind);
+            if(info != null) {
+                wordToShow = info.getEspanol_def();
+            } else {
+                wordToShow = Constants.WORD_NOT_FOUND;
+            }
         }
 
         Intent wordResult = new Intent(this, word_result.class);
         wordResult.putExtra(Constants.WORD_FOUND_URI, wordToShow);
+        wordResult.putExtra(Constants.AUDIO_FOUND_URI, phonetic);
         startActivity(wordResult);
     }
 
-    public void backToMenu(View view) {
+    @Override
+    public void onBackPressed() {
         Intent intent = new Intent(this, welcome.class);
         startActivity(intent);
+    }
+
+    public void backToMenu(View view) {
+        onBackPressed();
     }
 }

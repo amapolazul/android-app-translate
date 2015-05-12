@@ -49,4 +49,8 @@
     <string name="dismiss_dialog">Cerrar!</string>
     <string name="title_activity_letter_b">LetterBActivity</string>
     <string name="title_activity_letter_bactivity_two">LetterBActivityTwo</string>
+    <string name="title_activity_letter_c">LetterCActivity</string>
+    <string name="title_activity_letter_cactivity_two">LetterCActivityTwo</string>
+    <string name="title_activity_letter_d">LetterDActivity</string>
+    <string name="title_activity_letter_dactivity_two">LetterDActivityTwo</string>
 </resources>

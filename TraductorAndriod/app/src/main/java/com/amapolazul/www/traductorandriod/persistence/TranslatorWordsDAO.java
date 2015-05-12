@@ -58,16 +58,30 @@ public class TranslatorWordsDAO {
      * @param wordInfo
      * @return
      */
-    public TranslatorWordsInfo getWordInfo(String wordInfo) {
-        List<TranslatorWordsInfo> transWords = getAllWords();
-        TranslatorWordsInfo selectedWord = null;
-        for(TranslatorWordsInfo info : transWords) {
-            if(wordInfo.equalsIgnoreCase(info.getEspanol_def()) || wordInfo.equalsIgnoreCase(info.getEnglish_def())){
-                selectedWord = info;
-                break;
-            }
+    public TranslatorWordsInfo getWordEnglishSpanishInfo(String wordInfo) {
+        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ENGLISH_TITLE+"=?";
+        Cursor c = database.rawQuery(selectQuery, new String[] { wordInfo });
+        if (c.moveToFirst()) {
+            return cursorToComment(c);
+        } else {
+            return null;
         }
-        return selectedWord;
+    }
+
+    public TranslatorWordsInfo getWordSpanishEnglishInfo(String wordInfo) {
+        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ESPANISH_TITLE+" LIKE '%"+wordInfo+"%'";
+        Cursor c = database.rawQuery(selectQuery, null);
+        if (c.moveToFirst()) {
+            return cursorToComment(c);
+        } else {
+            return null;
+        }
+    }
+
+    public void removeAll()
+    {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        db.delete(TranslatorSQLiteHelper.TABLE_NAME, null, null);
     }
 
     public List<TranslatorWordsInfo> getAllWords() {
