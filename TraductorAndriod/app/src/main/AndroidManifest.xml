@@ -33,15 +33,6 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".under_six.letters.LetterHActivity"
-            android:label="@string/title_activity_letter_h"
-            android:parentActivityName=".under_six.UnderSixActivity"
-            android:screenOrientation="landscape" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity" />
-        </activity>
-        <activity
             android:name=".under_six.letters.LetterAActivity"
             android:label="@string/title_activity_letter_a"
             android:parentActivityName=".under_six.UnderSixActivity"
@@ -51,17 +42,10 @@
                 android:value="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity" />
         </activity>
         <activity
-            android:name=".under_six.letters.popup.GrandMotherPopUp"
-            android:label="@string/title_activity_grand_mother_pop_up"
-            android:parentActivityName=".under_six.letters.LetterAActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.amapolazul.www.traductorandriod.under_six.letters.LetterAActivity" />
-        </activity>
-        <activity
             android:name=".under_six.letters.LetterAActivityTwo"
             android:label="@string/title_activity_letter_aactivity_two"
-            android:parentActivityName=".under_six.letters.LetterAActivity" >
+            android:parentActivityName=".under_six.letters.LetterAActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.amapolazul.www.traductorandriod.under_six.letters.LetterAActivity" />
@@ -69,7 +53,8 @@
         <activity
             android:name=".under_six.letters.letter_b.LetterBActivity"
             android:label="@string/title_activity_letter_b"
-            android:parentActivityName=".under_six.UnderSixActivity" >
+            android:parentActivityName=".under_six.UnderSixActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity" />
@@ -77,26 +62,207 @@
         <activity
             android:name=".under_six.letters.letter_b.LetterBActivityTwo"
             android:label="@string/title_activity_letter_bactivity_two"
-            android:parentActivityName=".under_six.letters.letter_b.LetterBActivity" >
+            android:parentActivityName=".under_six.letters.letter_b.LetterBActivity"
+            android:screenOrientation="landscape" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.amapolazul.www.traductorandriod.under_six.letters.letter_b.LetterBActivity" />
         </activity>
         <activity
             android:name=".under_six.letters.letter_c.LetterCActivity"
-            android:label="@string/title_activity_letter_c" >
+            android:label="@string/title_activity_letter_c"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_c.LetterCActivityTwo"
-            android:label="@string/title_activity_letter_cactivity_two" >
+            android:label="@string/title_activity_letter_cactivity_two"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_d.LetterDActivity"
-            android:label="@string/title_activity_letter_d" >
+            android:label="@string/title_activity_letter_d"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_d.LetterDActivityTwo"
-            android:label="@string/title_activity_letter_dactivity_two" >
+            android:label="@string/title_activity_letter_dactivity_two"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_e.LetterEActivity"
+            android:label="@string/title_activity_letter_e" >
+        </activity>
+        <activity
+            android:name=".LetterEActivityTwo"
+            android:label="@string/title_activity_letter_eactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_f.LetterFActivity"
+            android:label="@string/title_activity_letter_f" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_f.LetterFActivityTwo"
+            android:label="@string/title_activity_letter_factivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_g.LetterGActivity"
+            android:label="@string/title_activity_letter_g" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_g.LetterGActivityTwo"
+            android:label="@string/title_activity_letter_gactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_h.LetterHActivityOne"
+            android:label="@string/title_activity_letter_hactivity_one" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_h.LetterHActivityTwo"
+            android:label="@string/title_activity_letter_hactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_i.LetterIActivity"
+            android:label="@string/title_activity_letter_i" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_i.LetterIActivityTwo"
+            android:label="@string/title_activity_letter_iactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_j.LetterJActivity"
+            android:label="@string/title_activity_letter_j" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_j.LetterJActivityTwo"
+            android:label="@string/title_activity_letter_jactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_k.LetterKActivity"
+            android:label="@string/title_activity_letter_k" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_k.LetterKActivityTwo"
+            android:label="@string/title_activity_letter_kactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_m.LetterMActivity"
+            android:label="@string/title_activity_letter_m" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_m.LetterMActivityTwo"
+            android:label="@string/title_activity_letter_mactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_n.LetterNActivity"
+            android:label="@string/title_activity_letter_n" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_n.LetterNActivityTwo"
+            android:label="@string/title_activity_letter_nactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_o.LetterOActivity"
+            android:label="@string/title_activity_letter_o" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_o.LetterOActivityTwo"
+            android:label="@string/title_activity_letter_oactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_p.LetterPActivity"
+            android:label="@string/title_activity_letter_p" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_p.LetterPActivityTwo"
+            android:label="@string/title_activity_letter_pactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_q.LetterQActivity"
+            android:label="@string/title_activity_letter_q" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_q.LetterQActivityTwo"
+            android:label="@string/title_activity_letter_qactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_r.LetterRActivity"
+            android:label="@string/title_activity_letter_r" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_r.LetterRActivityTwo"
+            android:label="@string/title_activity_letter_ractivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_s.LetterSActivity"
+            android:label="@string/title_activity_letter_s" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_s.LetterSActivityTwo"
+            android:label="@string/title_activity_letter_sactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_t.LetterTActivity"
+            android:label="@string/title_activity_letter_t" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_t.LetterTActivityTwo"
+            android:label="@string/title_activity_letter_tactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_u.LetterUActivity"
+            android:label="@string/title_activity_letter_u" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_u.LetterUActivityTwo"
+            android:label="@string/title_activity_letter_uactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_v.LetterVActivity"
+            android:label="@string/title_activity_letter_v" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_v.LetterVActivityTwo"
+            android:label="@string/title_activity_letter_vactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_w.LetterWActivity"
+            android:label="@string/title_activity_letter_w" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_w.LetterWActivityTwo"
+            android:label="@string/title_activity_letter_wactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_x.LetterXActivity"
+            android:label="@string/title_activity_letter_x" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_x.LetterXActivityTwo"
+            android:label="@string/title_activity_letter_xactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_y.LetterYActivity"
+            android:label="@string/title_activity_letter_y" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_y.LetterYActivityTwo"
+            android:label="@string/title_activity_letter_yactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_z.LetterZActivity"
+            android:label="@string/title_activity_letter_z" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_z.LetterZActivityTwo"
+            android:label="@string/title_activity_letter_zactivity_two" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_l.LetterLActivity"
+            android:label="@string/title_activity_letter_l" >
+        </activity>
+        <activity
+            android:name=".under_six.letters.letter_l.LetterLActivityTwo"
+            android:label="@string/title_activity_letter_lactivity_two" >
         </activity>
     </application>
 

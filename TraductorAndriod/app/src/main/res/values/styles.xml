@@ -22,15 +22,10 @@
 
 <resources>
 <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-    <item name="android:radioButtonStyle">@style/RadioButton</item>
 </style>
 <style name="lightbox_dialog" parent="@android:style/Theme.Translucent.NoTitleBar">
     <item name="android:windowAnimationStyle">@style/dialog_animation</item>
     <item name="android:background">@color/translucent_black</item>
-</style>
-
-<style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
-    <item name="android:button">@drawable/radio</item>
 </style>
 
 <style name="dialog_animation">
