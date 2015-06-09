@@ -165,7 +165,7 @@ public class LetterJActivity extends Activity {
         MediaPlayer mPlayer = MediaPlayer.create(LetterJActivity.this, R.raw.gardener);
         busyDialog = new Dialog(this, R.style.lightbox_dialog);
         busyDialog.setContentView(R.layout.lightbox_dialog);
-        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.jardinero);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.jardinerolarge);
 
         ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
         dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
@@ -222,7 +222,7 @@ public class LetterJActivity extends Activity {
         MediaPlayer mPlayer = MediaPlayer.create(LetterJActivity.this, R.raw.boss);
         busyDialog = new Dialog(this, R.style.lightbox_dialog);
         busyDialog.setContentView(R.layout.lightbox_dialog);
-        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.impresoralarge);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.jefelarge);
 
         ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
         dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
@@ -247,7 +247,7 @@ public class LetterJActivity extends Activity {
         startActivity(intent);
     }
 
-    public void goToOtherWordsILetter(View view) {
+    public void goToOtherWordsJLetter(View view) {
         Intent intent  = new Intent(this, LetterJActivityTwo.class);
         startActivity(intent);
     }

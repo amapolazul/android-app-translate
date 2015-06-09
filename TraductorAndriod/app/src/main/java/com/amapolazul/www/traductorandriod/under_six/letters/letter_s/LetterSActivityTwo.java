@@ -1,13 +1,20 @@
 package com.amapolazul.www.traductorandriod.under_six.letters.letter_s;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.amapolazul.www.traductorandriod.R;
 
-public class LetterSActivityTwo extends ActionBarActivity {
+public class LetterSActivityTwo extends Activity {
+
+    private Dialog busyDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +43,205 @@ public class LetterSActivityTwo extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void playSnakeSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.snake);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.serpientelarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playHandSawSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.handsaw);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.serrucholarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playChairSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.chair);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sillalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playSunSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.sun);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sollarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playShadowSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.shadow);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sombralarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playHatSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.hat);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sombrerolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playUmbrellaSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.umbrella);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sombrillalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playSoupSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.soup);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sopalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playSubmarineSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.submarine);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.submarinolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playSevenSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterSActivityTwo.this, R.raw.seven);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.sietelarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent  = new Intent(this, LetterSActivity.class);
+        startActivity(intent);
+    }
+
+    public void returnToSLetter(View view) {
+        onBackPressed();
     }
 }

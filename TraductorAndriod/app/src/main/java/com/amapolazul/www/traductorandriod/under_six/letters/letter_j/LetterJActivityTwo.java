@@ -183,7 +183,7 @@ public class LetterJActivityTwo extends Activity {
         MediaPlayer mPlayer = MediaPlayer.create(LetterJActivityTwo.this, R.raw.juice);
         busyDialog = new Dialog(this, R.style.lightbox_dialog);
         busyDialog.setContentView(R.layout.lightbox_dialog);
-        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.jugo);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.jugolarge);
 
         ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
         dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){

@@ -70,7 +70,7 @@ public class LetterKActivity extends Activity {
         MediaPlayer mPlayer = MediaPlayer.create(LetterKActivity.this, R.raw.karate);
         busyDialog = new Dialog(this, R.style.lightbox_dialog);
         busyDialog.setContentView(R.layout.lightbox_dialog);
-        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.karaokelarge);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.karatelarge);
 
         ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
         dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
@@ -127,7 +127,7 @@ public class LetterKActivity extends Activity {
         MediaPlayer mPlayer = MediaPlayer.create(LetterKActivity.this, R.raw.kindergarten);
         busyDialog = new Dialog(this, R.style.lightbox_dialog);
         busyDialog.setContentView(R.layout.lightbox_dialog);
-        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.iglularge);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.kinderlarge);
         ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
         dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
 

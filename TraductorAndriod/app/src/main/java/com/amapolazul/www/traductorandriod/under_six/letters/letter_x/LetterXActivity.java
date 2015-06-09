@@ -1,13 +1,21 @@
 package com.amapolazul.www.traductorandriod.under_six.letters.letter_x;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.amapolazul.www.traductorandriod.R;
+import com.amapolazul.www.traductorandriod.under_six.UnderSixActivity;
 
-public class LetterXActivity extends ActionBarActivity {
+public class LetterXActivity extends Activity {
+
+    private Dialog busyDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +44,111 @@ public class LetterXActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void playXenonSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterXActivity.this, R.raw.xenon);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.xenonlarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+
+        mPlayer.start();
+    }
+
+    public void playXerographySound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterXActivity.this, R.raw.xerography);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.xerografialarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playXylophoneSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterXActivity.this, R.raw.xylophone);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.xilofonolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playWoodcutSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterXActivity.this, R.raw.woodcut);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.xilografialarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playXylographSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterXActivity.this, R.raw.xylograph);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.xilografolarge);
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+
+        mPlayer.start();
+    }
+
+    public void returnToUnderSixXLetter(View view) {
+        onBackPressed();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent  = new Intent(this, UnderSixActivity.class);
+        startActivity(intent);
     }
 }

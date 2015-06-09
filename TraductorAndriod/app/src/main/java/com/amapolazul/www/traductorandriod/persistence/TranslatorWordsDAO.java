@@ -69,7 +69,7 @@ public class TranslatorWordsDAO {
     }
 
     public TranslatorWordsInfo getWordSpanishEnglishInfo(String wordInfo) {
-        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ESPANISH_TITLE+" LIKE '%"+wordInfo+"%'";
+        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ESPANISH_TITLE+"=?";
         Cursor c = database.rawQuery(selectQuery, null);
         if (c.moveToFirst()) {
             return cursorToComment(c);

@@ -1,13 +1,20 @@
 package com.amapolazul.www.traductorandriod.under_six.letters.letter_z;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.amapolazul.www.traductorandriod.R;
 
-public class LetterZActivityTwo extends ActionBarActivity {
+public class LetterZActivityTwo extends Activity {
+
+    private Dialog busyDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +43,205 @@ public class LetterZActivityTwo extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void playOpossumSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.opossum);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zariguellalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playOperettaSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.operetta);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zarzuelalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playZincSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.zinc);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zinclarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playZodiacSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.zodiac);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zodiacolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playZombieSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.zombie);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zombilarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playZoneSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.area);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zonalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playZooSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.zoo);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zoologicolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playFoxSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.fox);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zorrolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playSabotSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.sabot);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zuecolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playJuiceSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterZActivityTwo.this, R.raw.juice);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.zumolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent  = new Intent(this, LetterZActivity.class);
+        startActivity(intent);
+    }
+
+    public void returnToZLetter(View view) {
+        onBackPressed();
     }
 }

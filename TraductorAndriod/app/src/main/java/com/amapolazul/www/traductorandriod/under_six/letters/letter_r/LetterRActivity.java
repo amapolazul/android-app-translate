@@ -1,13 +1,21 @@
 package com.amapolazul.www.traductorandriod.under_six.letters.letter_r;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.amapolazul.www.traductorandriod.R;
+import com.amapolazul.www.traductorandriod.under_six.UnderSixActivity;
 
-public class LetterRActivity extends ActionBarActivity {
+public class LetterRActivity extends Activity {
+
+    private Dialog busyDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +44,211 @@ public class LetterRActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void playRadioSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.radio);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.radiolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+
+        mPlayer.start();
+    }
+
+    public void playBranchSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.branch);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.ramalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playBouquetSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.bouquet);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.ramolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playFrogSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.frog);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.ranalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playRacketSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.racket);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.raquetalarge);
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+
+        mPlayer.start();
+    }
+
+    public void playMouseSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.mouse);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.ratonlarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playGiftSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.gift);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.regalolarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playRulerSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.ruler);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.reglalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playQueenSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.queen);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.reinalarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void playReligionSound(View view) {
+        MediaPlayer mPlayer = MediaPlayer.create(LetterRActivity.this, R.raw.religion);
+        busyDialog = new Dialog(this, R.style.lightbox_dialog);
+        busyDialog.setContentView(R.layout.lightbox_dialog);
+        ((ImageView)busyDialog.findViewById(R.id.dialogText)).setImageResource(R.drawable.religionlarge);
+
+        ImageView dismisDialogImageView = (ImageView)busyDialog.findViewById(R.id.dismissDialog);
+        dismisDialogImageView.setOnClickListener(new ImageView.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                busyDialog.dismiss();
+            }});
+
+        busyDialog.show();
+        mPlayer.start();
+    }
+
+    public void returnToUnderSixRLetter(View view) {
+        onBackPressed();
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent  = new Intent(this, UnderSixActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToOtherWordsRLetter(View view) {
+        Intent intent  = new Intent(this, LetterRActivityTwo.class);
+        startActivity(intent);
     }
 }

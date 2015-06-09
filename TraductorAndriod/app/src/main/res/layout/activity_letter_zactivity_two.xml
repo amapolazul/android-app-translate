@@ -1,12 +1,141 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/letterZActivityLayoutTwo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo202"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
     tools:context="com.amapolazul.www.traductorandriod.under_six.letters.letter_z.LetterZActivityTwo">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
+    <ImageView
+        android:id="@+id/diez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView35"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="34dp"
+        android:onClick="playOpossumSound"
+        android:src="@drawable/zariguella" />
+
+    <ImageView
+        android:id="@+id/dinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/domir"
+        android:layout_alignStart="@+id/domir"
+        android:layout_alignTop="@+id/diente"
+        android:onClick="playZincSound"
+        android:src="@drawable/zinc" />
+
+    <ImageView
+        android:id="@+id/delfin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dinero"
+        android:layout_toEndOf="@+id/direccion"
+        android:layout_toRightOf="@+id/direccion"
+        android:onClick="playZombieSound"
+        android:src="@drawable/zombi" />
+
+    <ImageView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/delfin"
+        android:layout_marginRight="34dp"
+        android:layout_toEndOf="@+id/domir"
+        android:layout_toRightOf="@+id/domir"
+        android:onClick="playZodiacSound"
+        android:src="@drawable/zodiaco" />
+
+    <ImageView
+        android:id="@+id/dulce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/domir"
+        android:layout_toRightOf="@+id/domir"
+        android:onClick="playSabotSound"
+        android:src="@drawable/zueco" />
+
+    <ImageView
+        android:id="@+id/doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/diez"
+        android:layout_toRightOf="@+id/diez"
+        android:onClick="playZooSound"
+        android:src="@drawable/zoologico" />
+
+    <ImageView
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/dados"
+        android:layout_toRightOf="@+id/dados"
+        android:onClick="playZoneSound"
+        android:src="@drawable/zona" />
+
+    <ImageView
+        android:id="@+id/durazno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delfin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/delfin"
+        android:onClick="playJuiceSound"
+        android:src="@drawable/zumo" />
+
+    <ImageView
+        android:id="@+id/volverPrincipalD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cereza"
+        android:layout_alignRight="@+id/cereza"
+        android:onClick="returnToZLetter"
+        android:src="@drawable/fichas3" />
+
+    <ImageView
+        android:id="@+id/domir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView35"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView35"
+        android:layout_marginRight="34dp"
+        android:onClick="playFoxSound"
+        android:src="@drawable/zorro" />
+
+    <ImageView
+        android:id="@+id/diente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/diez"
+        android:layout_toEndOf="@+id/diez"
+        android:layout_toRightOf="@+id/diez"
+        android:onClick="playOperettaSound"
+        android:src="@drawable/zarzuela" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/volverPrincipalD"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fichas2" />
 </RelativeLayout>
+
+
+
+
+
+
+
