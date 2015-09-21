@@ -26,7 +26,7 @@
         android:id="@+id/anilloB"
         android:src="@drawable/abuelo"
         android:onClick="playGrandFaSound"
-        android:layout_marginLeft="37dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginStart="37dp"
         android:layout_alignTop="@+id/angelB"
         android:layout_toRightOf="@+id/angelB"
@@ -40,7 +40,8 @@
         android:onClick="playActorSound"
         android:layout_alignTop="@+id/anilloB"
         android:layout_alignLeft="@+id/imageView35"
-        android:layout_alignStart="@+id/imageView35" />
+        android:layout_alignStart="@+id/imageView35"
+        android:layout_marginLeft="-18dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
         android:layout_alignTop="@+id/animalB"
         android:layout_toRightOf="@+id/animalB"
         android:layout_toEndOf="@+id/animalB"
-        android:layout_marginLeft="38dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginStart="38dp"
         android:layout_marginRight="35dp" />
 
@@ -121,7 +122,8 @@
         android:onClick="playAirPortSound"
         android:layout_alignTop="@+id/dentista"
         android:layout_toRightOf="@+id/dentista"
-        android:layout_toEndOf="@+id/dentista" />
+        android:layout_toEndOf="@+id/dentista"
+        android:layout_marginLeft="-20dp" />
 
     <ImageView
         android:layout_width="wrap_content"
