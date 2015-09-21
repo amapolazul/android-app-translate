@@ -58,21 +58,39 @@ public class TranslatorWordsDAO {
      * @param wordInfo
      * @return
      */
-    public TranslatorWordsInfo getWordEnglishSpanishInfo(String wordInfo) {
-        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ENGLISH_TITLE+"=?";
-        Cursor c = database.rawQuery(selectQuery, new String[] { wordInfo });
+    public List<TranslatorWordsInfo> getWordEnglishSpanishInfo(String wordInfo) {
+//        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ENGLISH_TITLE+"=?";
+          String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+
+                  "replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace( lower("+TranslatorSQLiteHelper.COLUMN_NAME_ENGLISH_TITLE+"), 'á','a'), 'ã','a'), 'â','a'), 'é','e'), 'ê','e'), 'í','i'),'ó','o') ,'õ','o') ,'ô','o'),'ú','u'), 'ç','c') " +
+                  "=?";
+        Cursor c = database.rawQuery(selectQuery, new String[]{wordInfo.toLowerCase()});
+        List<TranslatorWordsInfo> transWordInfoList = new ArrayList<TranslatorWordsInfo>();
         if (c.moveToFirst()) {
-            return cursorToComment(c);
+            while (!c.isAfterLast()) {
+                TranslatorWordsInfo comment = cursorToComment(c);
+                transWordInfoList.add(comment);
+                c.moveToNext();
+            }
+            return transWordInfoList;
         } else {
             return null;
         }
     }
 
-    public TranslatorWordsInfo getWordSpanishEnglishInfo(String wordInfo) {
-        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ESPANISH_TITLE+"=?";
-        Cursor c = database.rawQuery(selectQuery, null);
+    public List<TranslatorWordsInfo> getWordSpanishEnglishInfo(String wordInfo) {
+//        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+TranslatorSQLiteHelper.COLUMN_NAME_ESPANISH_TITLE+"=?";
+        String selectQuery = "SELECT * FROM "+TranslatorSQLiteHelper.TABLE_NAME+" WHERE "+
+                "replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace( lower("+TranslatorSQLiteHelper.COLUMN_NAME_ESPANISH_TITLE+"), 'á','a'), 'ã','a'), 'â','a'), 'é','e'), 'ê','e'), 'í','i'),'ó','o') ,'õ','o') ,'ô','o'),'ú','u'), 'ç','c') " +
+                "=?";
+        Cursor c = database.rawQuery(selectQuery, new String[]{wordInfo.toLowerCase()});
+        List<TranslatorWordsInfo> transWordInfoList = new ArrayList<TranslatorWordsInfo>();
         if (c.moveToFirst()) {
-            return cursorToComment(c);
+            while (!c.isAfterLast()) {
+                TranslatorWordsInfo comment = cursorToComment(c);
+                transWordInfoList.add(comment);
+                c.moveToNext();
+            }
+            return transWordInfoList;
         } else {
             return null;
         }

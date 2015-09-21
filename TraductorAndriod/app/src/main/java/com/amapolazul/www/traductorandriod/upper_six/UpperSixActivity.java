@@ -26,11 +26,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.SQLException;
+import java.util.List;
 
 public class UpperSixActivity extends Activity {
 
     private String translateType;
-    private TranslatorWordsDAO translatorWordsDAO;
+        private TranslatorWordsDAO translatorWordsDAO;
     private boolean changeRadioStatusEnglish;
 
     @Override
@@ -65,8 +66,8 @@ public class UpperSixActivity extends Activity {
                     TranslatorWordsInfo translatorWordsInfo = new TranslatorWordsInfo();
                     translatorWordsInfo.setEnglish_audio_path(array[2]);
                     translatorWordsInfo.setEspanol_audio_path("pathSpa");
-                    translatorWordsInfo.setEnglish_def(array[0]);
-                    translatorWordsInfo.setEspanol_def(array[1]);
+                    translatorWordsInfo.setEnglish_def(array[1]);
+                    translatorWordsInfo.setEspanol_def(array[0]);
                     translatorWordsDAO.createWordDefinition(translatorWordsInfo);
                 }
             }
@@ -130,28 +131,37 @@ public class UpperSixActivity extends Activity {
         String wordToFind = textEdit.getText().toString();
         String wordToShow = "";
         String phonetic = "";
+        String spanishResult = "";
 
         if (translateType.equals(Constants.ESP_TRANS_TYPE)) {
-            TranslatorWordsInfo info = translatorWordsDAO.getWordSpanishEnglishInfo(wordToFind);
+            List<TranslatorWordsInfo> info = translatorWordsDAO.getWordSpanishEnglishInfo(wordToFind);
             if(info != null) {
-                wordToShow = info.getEnglish_def();
-                phonetic = info.getEnglish_audio_path();
+                for(TranslatorWordsInfo inf: info) {
+                    wordToShow += inf.getEnglish_def() + ", ";
+                    phonetic += "("+inf.getEnglish_audio_path()+")";
+                    wordToShow += "\n";
+                    phonetic += "\n";
+                }
             } else {
                 wordToShow = Constants.WORD_NOT_FOUND;
             }
 
         } else {
-            TranslatorWordsInfo info = translatorWordsDAO.getWordEnglishSpanishInfo(wordToFind);
+            List<TranslatorWordsInfo> info = translatorWordsDAO.getWordEnglishSpanishInfo(wordToFind);
             if(info != null) {
-                wordToShow = info.getEspanol_def();
+                for(TranslatorWordsInfo inf: info) {
+                    spanishResult += inf.getEspanol_def();
+                    spanishResult += "\n";
+                }
             } else {
-                wordToShow = Constants.WORD_NOT_FOUND;
+                spanishResult = Constants.WORD_NOT_FOUND;
             }
         }
 
         Intent wordResult = new Intent(this, word_result.class);
         wordResult.putExtra(Constants.WORD_FOUND_URI, wordToShow);
         wordResult.putExtra(Constants.AUDIO_FOUND_URI, phonetic);
+        wordResult.putExtra(Constants.WORD_SPANISH_RESULT, spanishResult);
         startActivity(wordResult);
     }
 

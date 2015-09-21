@@ -11,11 +11,6 @@
             android:name=".welcome"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".upper_six.UpperSixActivity"
@@ -91,221 +86,241 @@
         <activity
             android:name=".under_six.letters.letter_e.LetterEActivity"
             android:label="@string/title_activity_letter_e"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".LetterEActivityTwo"
             android:label="@string/title_activity_letter_eactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_f.LetterFActivity"
             android:label="@string/title_activity_letter_f"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_f.LetterFActivityTwo"
             android:label="@string/title_activity_letter_factivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_g.LetterGActivity"
             android:label="@string/title_activity_letter_g"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_g.LetterGActivityTwo"
             android:label="@string/title_activity_letter_gactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_h.LetterHActivityOne"
             android:label="@string/title_activity_letter_hactivity_one"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_h.LetterHActivityTwo"
             android:label="@string/title_activity_letter_hactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_i.LetterIActivity"
             android:label="@string/title_activity_letter_i"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_i.LetterIActivityTwo"
             android:label="@string/title_activity_letter_iactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_j.LetterJActivity"
             android:label="@string/title_activity_letter_j"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_j.LetterJActivityTwo"
             android:label="@string/title_activity_letter_jactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_k.LetterKActivity"
             android:label="@string/title_activity_letter_k"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_k.LetterKActivityTwo"
             android:label="@string/title_activity_letter_kactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_m.LetterMActivity"
             android:label="@string/title_activity_letter_m"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_m.LetterMActivityTwo"
             android:label="@string/title_activity_letter_mactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_n.LetterNActivity"
             android:label="@string/title_activity_letter_n"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_n.LetterNActivityTwo"
             android:label="@string/title_activity_letter_nactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_o.LetterOActivity"
             android:label="@string/title_activity_letter_o"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_o.LetterOActivityTwo"
             android:label="@string/title_activity_letter_oactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_p.LetterPActivity"
             android:label="@string/title_activity_letter_p"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_p.LetterPActivityTwo"
             android:label="@string/title_activity_letter_pactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_q.LetterQActivity"
             android:label="@string/title_activity_letter_q"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_q.LetterQActivityTwo"
             android:label="@string/title_activity_letter_qactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_r.LetterRActivity"
             android:label="@string/title_activity_letter_r"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_r.LetterRActivityTwo"
             android:label="@string/title_activity_letter_ractivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_s.LetterSActivity"
             android:label="@string/title_activity_letter_s"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_s.LetterSActivityTwo"
             android:label="@string/title_activity_letter_sactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_t.LetterTActivity"
             android:label="@string/title_activity_letter_t"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_t.LetterTActivityTwo"
             android:label="@string/title_activity_letter_tactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_u.LetterUActivity"
             android:label="@string/title_activity_letter_u"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_u.LetterUActivityTwo"
             android:label="@string/title_activity_letter_uactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_v.LetterVActivity"
             android:label="@string/title_activity_letter_v"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_v.LetterVActivityTwo"
             android:label="@string/title_activity_letter_vactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_w.LetterWActivity"
             android:label="@string/title_activity_letter_w"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_w.LetterWActivityTwo"
             android:label="@string/title_activity_letter_wactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_x.LetterXActivity"
             android:label="@string/title_activity_letter_x"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_x.LetterXActivityTwo"
             android:label="@string/title_activity_letter_xactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_y.LetterYActivity"
             android:label="@string/title_activity_letter_y"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_y.LetterYActivityTwo"
             android:label="@string/title_activity_letter_yactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_z.LetterZActivity"
             android:label="@string/title_activity_letter_z"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_z.LetterZActivityTwo"
             android:label="@string/title_activity_letter_zactivity_two"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_l.LetterLActivity"
             android:label="@string/title_activity_letter_l"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".under_six.letters.letter_l.LetterLActivityTwo"
             android:label="@string/title_activity_letter_lactivity_two"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Intro"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroTwo"
+            android:label="@string/title_activity_intro_two"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".IntroThree"
+            android:label="@string/title_activity_intro_three"
             android:screenOrientation="landscape">
         </activity>
     </application>

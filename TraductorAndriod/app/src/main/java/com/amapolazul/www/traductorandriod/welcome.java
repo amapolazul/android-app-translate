@@ -1,6 +1,7 @@
 package com.amapolazul.www.traductorandriod;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.amapolazul.www.traductorandriod.under_six.UnderSixActivity;
 import com.amapolazul.www.traductorandriod.upper_six.UpperSixActivity;

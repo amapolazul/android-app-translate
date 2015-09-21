@@ -18,6 +18,7 @@ public class word_result extends Activity {
 
     private String wordToShow;
     private String phonetic;
+    private String spanishResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +28,21 @@ public class word_result extends Activity {
         Intent intent = getIntent();
         wordToShow = intent.getStringExtra(Constants.WORD_FOUND_URI);
         phonetic = intent.getStringExtra(Constants.AUDIO_FOUND_URI);
+        spanishResult = intent.getStringExtra(Constants.WORD_SPANISH_RESULT);
         Typeface face = Typeface.createFromAsset(getAssets(),
                 "pooh.ttf");
 
         TextView textView = (TextView) findViewById(R.id.wordResult);
         textView.setTypeface(face);
-        TextView textViewPhonetic = (TextView) findViewById(R.id.phonetic);
+        textView.setText(wordToShow);
+
+        TextView textViewPhonetic = (TextView) findViewById(R.id.phoneticField);
         textViewPhonetic.setTypeface(face);
-        textView.setText(wordToShow.replace(",", "\n"));
         textViewPhonetic.setText(phonetic);
+
+        TextView textViewSpanish = (TextView) findViewById(R.id.spanishResult);
+        textViewSpanish.setTypeface(face);
+        textViewSpanish.setText(spanishResult);
     }
 
 
