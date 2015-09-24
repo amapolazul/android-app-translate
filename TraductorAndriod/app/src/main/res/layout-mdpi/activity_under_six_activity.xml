@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo202"
+    tools:context="com.amapolazul.www.traductorandriod.under_six.UnderSixActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/a"
+        android:focusableInTouchMode="false"
+        android:onClick="goToLetterAActivity"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toLeftOf="@+id/imageView5"
+        android:layout_toStartOf="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/b"
+        android:layout_above="@+id/imageView11"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView6"
+        android:onClick="goToLetterBActivity" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/c"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toLeftOf="@+id/imageView7"
+        android:layout_toStartOf="@+id/imageView7"
+        android:onClick="goToLetterCActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:src="@drawable/d"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToLetterDActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:src="@drawable/e"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toRightOf="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7"
+        android:onClick="goToLetterEActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:src="@drawable/f"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        android:onClick="goToLetterFActivity"
+        android:layout_toEndOf="@+id/imageView8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:src="@drawable/g"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_toRightOf="@+id/imageView9"
+        android:layout_toEndOf="@+id/imageView9"
+        android:onClick="goToLetterGActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/h"
+        android:layout_above="@+id/imageView18"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:onClick="goToLetterHActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView12"
+        android:src="@drawable/i"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_toRightOf="@+id/imageView11"
+        android:layout_toEndOf="@+id/imageView11"
+        android:onClick="goToLetterIActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView13"
+        android:src="@drawable/j"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:onClick="goToLetterJActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView14"
+        android:src="@drawable/k"
+        android:layout_alignTop="@+id/imageView13"
+        android:layout_toRightOf="@+id/imageView13"
+        android:layout_toEndOf="@+id/imageView13"
+        android:onClick="goToLetterKActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView15"
+        android:src="@drawable/l"
+        android:layout_alignTop="@+id/imageView14"
+        android:layout_toRightOf="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView14"
+        android:onClick="goToLetterLActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView16"
+        android:src="@drawable/m"
+        android:layout_alignTop="@+id/imageView15"
+        android:layout_toRightOf="@+id/imageView15"
+        android:layout_toEndOf="@+id/imageView15"
+        android:onClick="goToLetterMActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView17"
+        android:src="@drawable/n"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_toRightOf="@+id/imageView16"
+        android:layout_toEndOf="@+id/imageView16"
+        android:onClick="goToLetterNActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView18"
+        android:src="@drawable/o"
+        android:layout_alignTop="@+id/imageView19"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11"
+        android:onClick="goToLetterOActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:src="@drawable/p"
+        android:layout_above="@+id/imageView25"
+        android:layout_toRightOf="@+id/imageView18"
+        android:layout_toEndOf="@+id/imageView18"
+        android:onClick="goToLetterPActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView20"
+        android:src="@drawable/q"
+        android:layout_above="@+id/imageView26"
+        android:layout_alignLeft="@+id/imageView26"
+        android:layout_alignStart="@+id/imageView26"
+        android:onClick="goToLetterQActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView21"
+        android:src="@drawable/r"
+        android:layout_alignTop="@+id/imageView20"
+        android:layout_toRightOf="@+id/imageView20"
+        android:layout_toEndOf="@+id/imageView20"
+        android:onClick="goToLetterRActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView22"
+        android:src="@drawable/s"
+        android:layout_above="@+id/imageView28"
+        android:layout_alignLeft="@+id/imageView28"
+        android:layout_alignStart="@+id/imageView28"
+        android:onClick="goToLetterSActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView23"
+        android:src="@drawable/t"
+        android:layout_above="@+id/imageView29"
+        android:layout_toLeftOf="@+id/imageView17"
+        android:layout_toStartOf="@+id/imageView17"
+        android:onClick="goToLetterTActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView24"
+        android:src="@drawable/u"
+        android:layout_alignTop="@+id/imageView23"
+        android:layout_toRightOf="@+id/imageView23"
+        android:layout_toEndOf="@+id/imageView23"
+        android:onClick="goToLetterUActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView25"
+        android:src="@drawable/v"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView18"
+        android:layout_toEndOf="@+id/imageView18"
+        android:onClick="goToLetterVActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView26"
+        android:src="@drawable/w"
+        android:layout_alignTop="@+id/imageView25"
+        android:layout_toRightOf="@+id/imageView25"
+        android:layout_toEndOf="@+id/imageView25"
+        android:onClick="goToLetterWActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView27"
+        android:src="@drawable/x"
+        android:layout_alignTop="@+id/imageView26"
+        android:layout_toRightOf="@+id/imageView26"
+        android:layout_toEndOf="@+id/imageView26"
+        android:onClick="goToLetterXActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView28"
+        android:src="@drawable/y"
+        android:layout_alignTop="@+id/imageView27"
+        android:layout_toRightOf="@+id/imageView27"
+        android:layout_toEndOf="@+id/imageView27"
+        android:onClick="goToLetterYActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView29"
+        android:src="@drawable/z"
+        android:layout_alignTop="@+id/imageView28"
+        android:layout_toRightOf="@+id/imageView28"
+        android:layout_toEndOf="@+id/imageView28"
+        android:onClick="goToLetterZActivity"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/fichas2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView33"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/fichas3"
+        android:clickable="true"
+        android:onClick="goInitPage" />
+</RelativeLayout>

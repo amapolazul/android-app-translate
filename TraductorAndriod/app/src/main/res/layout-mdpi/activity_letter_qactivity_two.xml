@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="40dp"
+android:paddingRight="8dp"
+android:paddingTop="5dp"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.amapolazul.www.traductorandriod.under_six.letters.letter_q.LetterQActivityTwo"
+android:background="@drawable/fondo202"
+android:id="@+id/letterQActivityLayoutTwo">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/diez"
+    android:src="@drawable/quinto"
+    android:layout_below="@+id/imageView35"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="34dp"
+    android:onClick="playFifthSound"
+    android:layout_marginRight="18dp" />
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/volverPrincipalD"
+    android:src="@drawable/fichas3"
+    android:onClick="returnToQLetter"
+    android:layout_alignRight="@+id/cereza"
+    android:layout_alignEnd="@+id/cereza" />
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/diente"
+    android:src="@drawable/quitasol"
+    android:onClick="playSunShadeSound"
+        android:layout_alignTop="@+id/diez"
+        android:layout_toRightOf="@+id/diez"
+        android:layout_toEndOf="@+id/diez" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView35"
+    android:src="@drawable/fichas2"
+    android:layout_alignTop="@+id/volverPrincipalD"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+
+
+
+

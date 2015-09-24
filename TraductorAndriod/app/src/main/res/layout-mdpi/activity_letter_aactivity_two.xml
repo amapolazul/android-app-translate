@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="40dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo202"
+    tools:context="com.amapolazul.www.traductorandriod.under_six.letters.LetterAActivityTwo"
+    android:id="@+id/letterActTwo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/angelB"
+        android:src="@drawable/angel"
+        android:onClick="playAngelSound"
+        android:layout_below="@+id/imageView35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anilloB"
+        android:src="@drawable/anillo"
+        android:onClick="playRingSound"
+        android:layout_alignTop="@+id/angelB"
+        android:layout_toLeftOf="@+id/animalB"
+        android:layout_toStartOf="@+id/animalB"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animalB"
+        android:src="@drawable/animal"
+        android:onClick="playAnimalSound"
+        android:layout_alignTop="@+id/anilloB"
+        android:layout_alignLeft="@+id/imageView35"
+        android:layout_alignStart="@+id/imageView35"
+        android:layout_marginLeft="-18dp"
+        android:layout_marginRight="18dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dentista"
+        android:src="@drawable/arbol"
+        android:onClick="playTreeSound"
+        android:layout_alignTop="@+id/animalB"
+        android:layout_toRightOf="@+id/animalB"
+        android:layout_toEndOf="@+id/animalB"
+        android:layout_marginStart="38dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="-5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deporte"
+        android:src="@drawable/autobus"
+        android:onClick="playBusSound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/anilloB"
+        android:layout_alignStart="@+id/anilloB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dia"
+        android:src="@drawable/arte"
+        android:onClick="playArtSound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avionB"
+        android:src="@drawable/avion"
+        android:onClick="playPlaneSound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/animalB"
+        android:layout_alignStart="@+id/animalB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dia"
+        android:src="@drawable/azucar"
+        android:onClick="playSugarSound"
+        android:layout_alignTop="@+id/avionB"
+        android:layout_alignLeft="@+id/dentista"
+        android:layout_alignStart="@+id/dentista" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volverPrincipalD"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/fichas3"
+        android:onClick="returnToUnderSix"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/azulB"
+        android:src="@drawable/azul"
+        android:onClick="playBlueSound"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/arrozB"
+        android:layout_alignStart="@+id/arrozB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/arrozB"
+        android:src="@drawable/arroz"
+        android:onClick="playRiceSound"
+        android:layout_alignTop="@+id/dentista"
+        android:layout_toRightOf="@+id/dentista"
+        android:layout_toEndOf="@+id/dentista"
+        android:layout_marginLeft="-17dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView35"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fichas2" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="40dp"
+android:paddingRight="8dp"
+android:paddingTop="5dp"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.amapolazul.www.traductorandriod.under_six.letters.letter_h.LetterHActivityOne"
+android:background="@drawable/fondo202"
+android:id="@+id/letterHActivityLayout">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dados"
+    android:src="@drawable/habitacion"
+    android:layout_below="@+id/imageView35"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="34dp"
+    android:onClick="playRoomSound"
+    android:layout_marginRight="35dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dedo"
+    android:src="@drawable/hablar"
+    android:onClick="playSpeakSound"
+    android:layout_alignTop="@+id/dados"
+    android:layout_toRightOf="@+id/desayuno"
+    android:layout_toEndOf="@+id/desayuno"
+    android:layout_marginRight="18dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/delfin"
+    android:src="@drawable/hamburguesa"
+    android:onClick="playHamburgerSound"
+    android:layout_alignTop="@+id/dedo"
+    android:layout_toRightOf="@+id/dedo"
+    android:layout_toEndOf="@+id/dedo"
+    android:layout_marginRight="18dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dentista"
+    android:src="@drawable/helicoptero"
+    android:onClick="playHelicopterSound"
+    android:layout_alignTop="@+id/dedo"
+    android:layout_toRightOf="@+id/delfin"
+    android:layout_toEndOf="@+id/delfin"
+    android:layout_marginRight="18dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/deporte"
+    android:src="@drawable/hermana"
+    android:onClick="playSisterSound"
+    android:layout_alignTop="@+id/dentista"
+    android:layout_toRightOf="@+id/dentista"
+    android:layout_toEndOf="@+id/dentista" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/desayuno"
+    android:src="@drawable/hermano"
+    android:onClick="playBrotherSound"
+    android:layout_alignTop="@+id/dia"
+    android:layout_toLeftOf="@+id/cabeza"
+    android:layout_toStartOf="@+id/cabeza"
+    android:layout_marginRight="18dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dia"
+    android:src="@drawable/herramienta"
+    android:onClick="playToolSound"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/desayuno"
+    android:layout_toEndOf="@+id/desayuno"
+    android:layout_marginRight="18dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/diario"
+    android:src="@drawable/hierba"
+    android:onClick="playGrassSound"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/diamante"
+    android:layout_toEndOf="@+id/diamante" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/volverPrincipalD"
+    android:src="@drawable/fichas3"
+    android:onClick="returnToUnderSixHLetter"
+    android:layout_alignTop="@+id/masFichasD"
+    android:layout_alignRight="@+id/cereza"
+    android:layout_alignEnd="@+id/cereza" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/diamante"
+    android:src="@drawable/hielo"
+    android:onClick="playIceSound"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/dia"
+    android:layout_toEndOf="@+id/dia"
+    android:layout_marginRight="18dp" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/diente"
+    android:src="@drawable/hilo"
+    android:onClick="playThreadSound"
+    android:layout_alignParentBottom="true"
+    android:layout_alignLeft="@+id/deporte"
+    android:layout_alignStart="@+id/deporte" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/masFichasD"
+    android:src="@drawable/fichas4"
+    android:clickable="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/deporte"
+    android:layout_alignEnd="@+id/deporte"
+    android:onClick="goToOtherWordsHLetter" />
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView35"
+    android:src="@drawable/fichas2"
+    android:layout_alignTop="@+id/volverPrincipalD"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
