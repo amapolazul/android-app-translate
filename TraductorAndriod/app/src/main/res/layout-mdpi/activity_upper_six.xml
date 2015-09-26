@@ -17,52 +17,50 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView36"
         android:src="@drawable/traducirbutton"
-        android:layout_marginRight="280dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginBottom="181dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginBottom="149dp"
         android:clickable="true"
-        android:onClick="search" />
+        android:onClick="search"
+        android:layout_above="@+id/engSpaRadio"
+        android:layout_toRightOf="@+id/inputPalabra"
+        android:layout_toEndOf="@+id/inputPalabra" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/inputPalabra"
         android:textSize="40dp"
+        android:width="330dp"
+        android:height="60dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignBottom="@+id/imageView36"
-        android:layout_toLeftOf="@+id/imageView36"
-        android:width="250dp"
-        android:height="60dp" />
+        android:layout_marginRight="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spaIngRadio"
-        android:layout_marginBottom="49dp"
+        android:layout_marginBottom="116dp"
         android:src="@drawable/radio_active"
-        android:layout_marginRight="96dp"
-        android:layout_marginEnd="96dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/inputPalabra"
-        android:layout_toStartOf="@+id/inputPalabra"
         android:clickable="true"
-        android:onClick="onRadioButtonClicked" />
+        android:onClick="onRadioButtonClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView39"
+        android:layout_toEndOf="@+id/imageView39"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/engSpaRadio"
         android:src="@drawable/radio_normal"
+        android:onClick="onRadioButtonClicked"
+        android:clickable="true"
         android:layout_alignTop="@+id/spaIngRadio"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="49dp"
-        android:layout_marginEnd="49dp"
-        android:onClick="onRadioButtonClicked"
-        android:clickable="true" />
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-4dp" />
 
     <ImageView
         android:layout_width="wrap_content"

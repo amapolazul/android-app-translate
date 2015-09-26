@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:layout_height="match_parent" android:paddingLeft="40dp"
 android:paddingRight="8dp"
 android:paddingTop="5dp"
 android:paddingBottom="@dimen/activity_vertical_margin"
@@ -27,8 +27,8 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:src="@drawable/rey"
     android:onClick="playKingSound"
     android:layout_alignTop="@+id/diente"
-    android:layout_alignLeft="@+id/domir"
-    android:layout_alignStart="@+id/domir" />
+    android:layout_toRightOf="@+id/diente"
+    android:layout_toEndOf="@+id/diente" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -37,8 +37,8 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:src="@drawable/rio"
     android:onClick="playRiverSound"
     android:layout_alignTop="@+id/dinero"
-    android:layout_toRightOf="@+id/direccion"
-    android:layout_toEndOf="@+id/direccion" />
+    android:layout_toRightOf="@+id/dulce"
+    android:layout_toEndOf="@+id/dulce" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -59,7 +59,8 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:onClick="playPinkSound"
     android:layout_alignParentBottom="true"
     android:layout_toRightOf="@+id/domir"
-    android:layout_toEndOf="@+id/domir" />
+    android:layout_toEndOf="@+id/domir"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -68,8 +69,8 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:src="@drawable/rojo"
     android:onClick="playRedSound"
     android:layout_alignParentBottom="true"
-    android:layout_toRightOf="@+id/diez"
-    android:layout_toEndOf="@+id/diez" />
+    android:layout_toRightOf="@+id/dos"
+    android:layout_toEndOf="@+id/dos" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -79,7 +80,8 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:onClick="playKneeSound"
     android:layout_alignParentBottom="true"
     android:layout_toRightOf="@+id/dados"
-    android:layout_toEndOf="@+id/dados" />
+    android:layout_toEndOf="@+id/dados"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -107,9 +109,9 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:src="@drawable/ropa"
     android:onClick="playClothingSound"
     android:layout_alignParentBottom="true"
-    android:layout_alignLeft="@+id/imageView35"
-    android:layout_alignStart="@+id/imageView35"
-    android:layout_marginRight="34dp" />
+    android:layout_alignLeft="@+id/dinero"
+    android:layout_alignStart="@+id/dinero"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -118,8 +120,9 @@ android:id="@+id/letterRActivityLayoutTwo">
     android:src="@drawable/restaurante"
     android:onClick="playRestaurantSound"
     android:layout_alignTop="@+id/diez"
-    android:layout_toRightOf="@+id/diez"
-    android:layout_toEndOf="@+id/diez" />
+    android:layout_toRightOf="@+id/dos"
+    android:layout_toEndOf="@+id/dos"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"

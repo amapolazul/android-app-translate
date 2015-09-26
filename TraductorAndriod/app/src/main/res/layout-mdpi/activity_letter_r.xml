@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:layout_height="match_parent" android:paddingLeft="40dp"
 android:paddingRight="8dp"
 android:paddingTop="5dp"
 android:paddingBottom="@dimen/activity_vertical_margin"
@@ -27,8 +27,9 @@ android:id="@+id/letterRActivityLayout">
     android:src="@drawable/rama"
     android:onClick="playBranchSound"
     android:layout_alignTop="@+id/dados"
-    android:layout_toRightOf="@+id/dados"
-    android:layout_toEndOf="@+id/dados" />
+    android:layout_toRightOf="@+id/desayuno"
+    android:layout_toEndOf="@+id/desayuno"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -36,10 +37,10 @@ android:id="@+id/letterRActivityLayout">
     android:id="@+id/delfin"
     android:src="@drawable/ramo"
     android:onClick="playBouquetSound"
-    android:layout_alignTop="@+id/dentista"
-    android:layout_alignLeft="@+id/diamante"
-    android:layout_alignStart="@+id/diamante"
-    android:layout_marginRight="34dp" />
+    android:layout_alignTop="@+id/dedo"
+    android:layout_toRightOf="@+id/dedo"
+    android:layout_toEndOf="@+id/dedo"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -49,7 +50,8 @@ android:id="@+id/letterRActivityLayout">
     android:onClick="playFrogSound"
     android:layout_alignTop="@+id/dedo"
     android:layout_toRightOf="@+id/delfin"
-    android:layout_toEndOf="@+id/delfin" />
+    android:layout_toEndOf="@+id/delfin"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -58,10 +60,8 @@ android:id="@+id/letterRActivityLayout">
     android:src="@drawable/raqueta"
     android:onClick="playRacketSound"
     android:layout_alignTop="@+id/dentista"
-    android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true"
-    android:layout_marginRight="50dp"
-    android:layout_marginEnd="50dp" />
+    android:layout_toRightOf="@+id/dentista"
+    android:layout_toEndOf="@+id/dentista" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -71,7 +71,8 @@ android:id="@+id/letterRActivityLayout">
     android:onClick="playMouseSound"
     android:layout_alignTop="@+id/dia"
     android:layout_toLeftOf="@+id/cabeza"
-    android:layout_toStartOf="@+id/cabeza" />
+    android:layout_toStartOf="@+id/cabeza"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -80,8 +81,8 @@ android:id="@+id/letterRActivityLayout">
     android:src="@drawable/regalo"
     android:onClick="playGiftSound"
     android:layout_alignParentBottom="true"
-    android:layout_toRightOf="@+id/dados"
-    android:layout_toEndOf="@+id/dados" />
+    android:layout_toRightOf="@+id/desayuno"
+    android:layout_toEndOf="@+id/desayuno" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -91,7 +92,8 @@ android:id="@+id/letterRActivityLayout">
     android:onClick="playQueenSound"
     android:layout_alignParentBottom="true"
     android:layout_toRightOf="@+id/diamante"
-    android:layout_toEndOf="@+id/diamante" />
+    android:layout_toEndOf="@+id/diamante"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -110,9 +112,9 @@ android:id="@+id/letterRActivityLayout">
     android:src="@drawable/regla"
     android:onClick="playRulerSound"
     android:layout_alignParentBottom="true"
-    android:layout_alignLeft="@+id/imageView35"
-    android:layout_alignStart="@+id/imageView35"
-    android:layout_marginRight="34dp" />
+    android:layout_toLeftOf="@+id/dentista"
+    android:layout_toStartOf="@+id/dentista"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"

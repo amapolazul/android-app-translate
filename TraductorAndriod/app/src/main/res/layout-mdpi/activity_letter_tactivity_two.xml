@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:layout_height="match_parent" android:paddingLeft="40dp"
 android:paddingRight="8dp"
 android:paddingTop="5dp"
 android:paddingBottom="@dimen/activity_vertical_margin"
@@ -27,8 +27,9 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:src="@drawable/tio"
     android:onClick="playUncleSound"
     android:layout_alignTop="@+id/diente"
-    android:layout_alignLeft="@+id/domir"
-    android:layout_alignStart="@+id/domir" />
+    android:layout_toRightOf="@+id/diente"
+    android:layout_toEndOf="@+id/diente"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -37,8 +38,8 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:src="@drawable/toro"
     android:onClick="playBullSound"
     android:layout_alignTop="@+id/dinero"
-    android:layout_toRightOf="@+id/direccion"
-    android:layout_toEndOf="@+id/direccion" />
+    android:layout_toRightOf="@+id/dulce"
+    android:layout_toEndOf="@+id/dulce" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -59,7 +60,8 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:onClick="playTomatoSound"
     android:layout_alignParentBottom="true"
     android:layout_toRightOf="@+id/domir"
-    android:layout_toEndOf="@+id/domir" />
+    android:layout_toEndOf="@+id/domir"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -68,8 +70,9 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:src="@drawable/tortuga"
     android:onClick="playTurtleSound"
     android:layout_alignParentBottom="true"
-    android:layout_toRightOf="@+id/diez"
-    android:layout_toEndOf="@+id/diez" />
+    android:layout_toRightOf="@+id/dos"
+    android:layout_toEndOf="@+id/dos"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -79,7 +82,8 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:onClick="playCakeTSound"
     android:layout_alignParentBottom="true"
     android:layout_toRightOf="@+id/dados"
-    android:layout_toEndOf="@+id/dados" />
+    android:layout_toEndOf="@+id/dados"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -87,9 +91,9 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:id="@+id/durazno"
     android:src="@drawable/tres"
     android:onClick="playThreeSound"
-    android:layout_alignParentBottom="true"
-    android:layout_alignLeft="@+id/delfin"
-    android:layout_alignStart="@+id/delfin" />
+    android:layout_alignTop="@+id/dulce"
+    android:layout_toRightOf="@+id/dulce"
+    android:layout_toEndOf="@+id/dulce" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -107,9 +111,9 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:src="@drawable/tren"
     android:onClick="playTrainSound"
     android:layout_alignParentBottom="true"
-    android:layout_alignLeft="@+id/imageView35"
-    android:layout_alignStart="@+id/imageView35"
-    android:layout_marginRight="34dp" />
+    android:layout_toRightOf="@+id/doctor"
+    android:layout_toEndOf="@+id/doctor"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"
@@ -118,8 +122,9 @@ android:id="@+id/letterTActivityLayoutTwo">
     android:src="@drawable/tijeras"
     android:onClick="playScissorsSound"
     android:layout_alignTop="@+id/diez"
-    android:layout_toRightOf="@+id/diez"
-    android:layout_toEndOf="@+id/diez" />
+    android:layout_toRightOf="@+id/dos"
+    android:layout_toEndOf="@+id/dos"
+    android:layout_marginRight="18dp" />
 
 <ImageView
     android:layout_width="wrap_content"

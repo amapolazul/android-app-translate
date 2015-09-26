@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo202"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingLeft="40dp"
     android:paddingRight="8dp"
     android:paddingTop="5dp"
     tools:context="com.amapolazul.www.traductorandriod.under_six.letters.letter_z.LetterZActivityTwo">
@@ -31,17 +31,18 @@
         android:layout_alignStart="@+id/domir"
         android:layout_alignTop="@+id/diente"
         android:onClick="playZincSound"
-        android:src="@drawable/zinc" />
+        android:src="@drawable/zinc"
+        android:layout_marginRight="18dp" />
 
     <ImageView
         android:id="@+id/delfin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/dinero"
-        android:layout_toEndOf="@+id/direccion"
-        android:layout_toRightOf="@+id/direccion"
         android:onClick="playZombieSound"
-        android:src="@drawable/zombi" />
+        android:src="@drawable/zombi"
+        android:layout_alignTop="@+id/dinero"
+        android:layout_toRightOf="@+id/dulce"
+        android:layout_toEndOf="@+id/dulce" />
 
     <ImageView
         android:id="@+id/direccion"
@@ -62,17 +63,19 @@
         android:layout_toEndOf="@+id/domir"
         android:layout_toRightOf="@+id/domir"
         android:onClick="playSabotSound"
-        android:src="@drawable/zueco" />
+        android:src="@drawable/zueco"
+        android:layout_marginRight="18dp" />
 
     <ImageView
         android:id="@+id/doctor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/diez"
-        android:layout_toRightOf="@+id/diez"
         android:onClick="playZooSound"
-        android:src="@drawable/zoologico" />
+        android:src="@drawable/zoologico"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/dos"
+        android:layout_toEndOf="@+id/dos"
+        android:layout_marginRight="18dp" />
 
     <ImageView
         android:id="@+id/dos"
@@ -82,7 +85,8 @@
         android:layout_toEndOf="@+id/dados"
         android:layout_toRightOf="@+id/dados"
         android:onClick="playZoneSound"
-        android:src="@drawable/zona" />
+        android:src="@drawable/zona"
+        android:layout_marginRight="18dp" />
 
     <ImageView
         android:id="@+id/durazno"
@@ -107,22 +111,22 @@
         android:id="@+id/domir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView35"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageView35"
-        android:layout_marginRight="34dp"
         android:onClick="playFoxSound"
-        android:src="@drawable/zorro" />
+        android:src="@drawable/zorro"
+        android:layout_alignTop="@+id/doctor"
+        android:layout_toRightOf="@+id/doctor"
+        android:layout_toEndOf="@+id/doctor"
+        android:layout_marginRight="18dp" />
 
     <ImageView
         android:id="@+id/diente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/diez"
-        android:layout_toEndOf="@+id/diez"
-        android:layout_toRightOf="@+id/diez"
         android:onClick="playOperettaSound"
-        android:src="@drawable/zarzuela" />
+        android:src="@drawable/zarzuela"
+        android:layout_alignTop="@+id/diez"
+        android:layout_toRightOf="@+id/dos"
+        android:layout_toEndOf="@+id/dos" />
 
     <ImageView
         android:id="@+id/imageView35"
